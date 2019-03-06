@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-cloud-admin
+  zipkin:
+    base-url: http://localhost:9070
+
+server:
+  port: 9090
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
