@@ -6,8 +6,8 @@ spring:
       label: master
       server:
         git:
-          uri: hhttps://github.com/jamie-jun/spring-cloud-dome.git
-          search-paths: spring-cloud-dome
+          uri: https://github.com/jamie-jun/spring-cloud-config.git
+          search-paths: resp
           username:
           password:
   zipkin:
